@@ -1,3 +1,5 @@
+import iicLogo from "./assets/IIC_logo.jpeg";
+import collegeLogo from "./assets/sahyadri.png";
 import React, { useState, useRef } from 'react';
 import { 
   Plus, 
@@ -107,35 +109,46 @@ export default function App() {
   } as any);
 
   const ReportHeader = () => (
-    <div className="text-center border-b-[2pt] border-black pb-2 mb-4 flex items-center justify-between gap-4 bg-white">
-      <div className="w-[85px] h-[85px] flex items-center justify-center overflow-hidden shrink-0 bg-white border border-slate-100">
-        {data.collegeLogo ? (
-          <img src={data.collegeLogo} className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
-        ) : (
-          <div className="text-[8pt] text-slate-300 font-bold uppercase">College<br/>Logo</div>
-        )}
-      </div>
-      
-      <div className="flex-1 bg-white overflow-hidden">
-        <p className="text-[16pt] font-extrabold uppercase leading-tight mb-0 text-black">SAHYADRI</p>
-        <p className="text-[9pt] font-bold uppercase leading-tight mb-1 text-black">COLLEGE OF ENGINEERING AND MANAGEMENT, MANGALORE</p>
-        <p className="text-[11pt] font-black uppercase leading-tight mb-1 text-[#1e3a8a]">Institution's Innovation Council (IIC)</p>
-        <p className="text-[10pt] font-bold leading-tight underline uppercase text-black mb-2">IIC ACTIVITY REPORT</p>
-        <div className="flex justify-center gap-8 text-[9pt] font-bold text-slate-700">
-           <span>Academic Year: <span className="text-blue-900">{data.academicYear}</span></span>
-           <span>Quarter: <span className="text-blue-900">{data.quarter}</span></span>
-        </div>
-      </div>
+  <div className="text-center border-b-[2pt] border-black pb-2 mb-4 flex items-center justify-between gap-4 bg-white">
+    
+    {/* College Logo */}
+    <div className="w-[85px] h-[85px] flex items-center justify-center overflow-hidden shrink-0 bg-white border border-slate-100">
+      <img
+        src={collegeLogo}
+        className="w-full h-full object-contain p-1"
+        alt="College Logo"
+      />
+    </div>
 
-      <div className="w-[85px] h-[85px] flex items-center justify-center overflow-hidden shrink-0 bg-white border border-slate-100">
-        {data.iicLogo ? (
-          <img src={data.iicLogo} className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
-        ) : (
-          <div className="text-[8pt] text-slate-300 font-bold uppercase">IIC Logo</div>
-        )}
+    {/* Center Content */}
+    <div className="flex-1 bg-white overflow-hidden">
+      <p className="text-[16pt] font-extrabold uppercase leading-tight mb-0 text-black">SAHYADRI</p>
+      <p className="text-[9pt] font-bold uppercase leading-tight mb-1 text-black">
+        COLLEGE OF ENGINEERING AND MANAGEMENT, MANGALORE
+      </p>
+      <p className="text-[11pt] font-black uppercase leading-tight mb-1 text-[#1e3a8a]">
+        Institution's Innovation Council (IIC)
+      </p>
+      <p className="text-[10pt] font-bold leading-tight underline uppercase text-black mb-2">
+        IIC ACTIVITY REPORT
+      </p>
+      <div className="flex justify-center gap-8 text-[9pt] font-bold text-slate-700">
+        <span>Academic Year: <span className="text-blue-900">{data.academicYear}</span></span>
+        <span>Quarter: <span className="text-blue-900">{data.quarter}</span></span>
       </div>
     </div>
-  );
+
+    {/* IIC Logo */}
+    <div className="w-[85px] h-[85px] flex items-center justify-center overflow-hidden shrink-0 bg-white border border-slate-100">
+      <img
+        src={iicLogo}
+        className="w-full h-full object-contain p-1"
+        alt="IIC Logo"
+      />
+    </div>
+
+  </div>
+);
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
