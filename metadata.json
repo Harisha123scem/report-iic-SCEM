@@ -1,0 +1,6 @@
+{
+  "name": "Sahyadri IIC Report Gen",
+  "description": "An official activity report generator for Sahyadri Institutions Innovation Council (IIC) with automated PDF generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
