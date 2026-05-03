@@ -133,7 +133,7 @@ export default function App() {
       <p className="text-[8pt] font-black uppercase leading-tight mb-1 text-[#1e3a8a]">
         Institution's Innovation Council (IIC) -IC201810844
       </p>
-      <p className="text-[10pt] font-bold leading-tight underline uppercase text-black mb-2">
+      <p className="text-[7pt] font-bold leading-tight underline uppercase text-black mb-2">
         IIC ACTIVITY REPORT
       </p>
       <div className="flex justify-center gap-8 text-[9pt] font-bold text-slate-700">
