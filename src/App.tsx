@@ -457,7 +457,7 @@ export default function App() {
 
                 <div className="space-y-2">
                   <label className="block text-[12px] font-bold text-slate-600 uppercase tracking-tight">Organizing Team Details</label>
-                  <textarea name="teamDetails" value={data.teamDetails} onChange={handleInputChange} rows={3} className="w-full px-4 py-3 text-[15px] border border-slate-300 rounded-lg outline-none focus:border-blue-500 transition-all resize-none shadow-sm" placeholder="Enter organizing team members..." />
+                  <textarea name="teamDetails" value={data.teamDetails} onChange={handleInputChange} rows={3} className="w-full px-4 py-3 text-[15px] border border-slate-300 rounded-lg outline-none focus:border-blue-500 transition-all resize-none shadow-sm" placeholder="Enter organizing team members in new name press enter maximum 6 name can be added..." />
                 </div>
 
                 <div className="grid grid-cols-1 gap-4">
