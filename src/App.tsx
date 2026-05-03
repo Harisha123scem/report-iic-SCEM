@@ -124,9 +124,13 @@ export default function App() {
     <div className="flex-1 bg-white overflow-hidden">
       <p className="text-[16pt] font-extrabold uppercase leading-tight mb-0 text-black">SAHYADRI</p>
       <p className="text-[9pt] font-bold uppercase leading-tight mb-1 text-black">
-        COLLEGE OF ENGINEERING & MANAGEMENT, MANGALURU,KA INDIA
+        COLLEGE OF ENGINEERING & MANAGEMENT, MANGALURU
       </p>
-      <p className="text-[11pt] font-black uppercase leading-tight mb-1 text-[#1e3a8a]">
+ <p className="text-[5pt] font-bold uppercase leading-tight mb-1 text-black">
+        [An Autonomous Institution]
+      </p>
+      
+      <p className="text-[8pt] font-black uppercase leading-tight mb-1 text-[#1e3a8a]">
         Institution's Innovation Council (IIC) -IC201810844
       </p>
       <p className="text-[10pt] font-bold leading-tight underline uppercase text-black mb-2">
