@@ -299,9 +299,9 @@ export default function App() {
                 <div className="space-y-2">
                   <label className="block text-[12px] font-bold text-slate-600 uppercase tracking-tight flex justify-between">
                     Brief bio of Speaker
-                    <span className="text-[10px] text-slate-400 font-normal">Max 600 characters</span>
+                    <span className="text-[10px] text-slate-400 font-normal">Max 500 characters</span>
                   </label>
-                  <textarea name="expertBrief" value={data.expertBrief} onChange={handleInputChange} rows={3} maxLength={600} placeholder="Speaker bio..." className="w-full px-4 py-3 text-[15px] border border-slate-300 rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 resize-none shadow-sm" />
+                  <textarea name="expertBrief" value={data.expertBrief} onChange={handleInputChange} rows={3} maxLength={400} placeholder="Speaker bio..." className="w-full px-4 py-3 text-[15px] border border-slate-300 rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 resize-none shadow-sm" />
                 </div>
               </div>
             </div>
@@ -674,7 +674,14 @@ export default function App() {
                     <div className="mb-6 h-[60mm] flex flex-col">
                       <h4 className="text-[11pt] font-bold uppercase mb-1">Organizing Team Details:</h4>
                       <div className="border border-black p-4 text-[10pt] flex-1 text-justify leading-relaxed bg-white overflow-hidden">
-                        {data.teamDetails || 'Details of the organizing team...'}
+                        <ul className="list-disc pl-5 space-y-1">
+  {data.teamDetails
+    ? data.teamDetails.split("\n").filter(line => line.trim() !== "").map((line, i) => (
+        <li key={i}>{line}</li>
+      ))
+    : <li className="italic text-slate-400">Details of the organizing team...</li>
+  }
+</ul>
                       </div>
                     </div>
 
