@@ -258,7 +258,54 @@ export default function App() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="block text-[12px] font-bold text-slate-600 uppercase tracking-tight">Organizing Department</label>
-                    <input type="text" name="organizingDept" value={data.organizingDept} onChange={handleInputChange} className="w-full px-4 py-3 text-[15px] border border-slate-300 rounded-lg outline-none focus:border-blue-500 shadow-sm" placeholder="e.g., Computer Science & Engineering" />
+                    <select
+  name="organizingDept"
+  value={data.organizingDept}
+  onChange={handleInputChange}
+  className="w-full px-4 py-3 text-[15px] border border-slate-300 rounded-lg outline-none focus:border-blue-500 bg-white shadow-sm"
+>
+  <option value="">Select Department</option>
+
+  <option value="Computer Science and Engineering">
+    Computer Science and Engineering
+  </option>
+
+  <option value="Information Science and Engineering">
+    Information Science and Engineering
+  </option>
+
+  <option value="Electronics & Communication Engineering">
+    Electronics & Communication Engineering
+  </option>
+
+  <option value="Mechanical Engineering">
+    Mechanical Engineering
+  </option>
+
+  <option value="Robotics and Automation Engineering">
+    Robotics and Automation Engineering
+  </option>
+
+  <option value="CSE (Artificial Intelligence and Machine Learning)">
+    CSE (Artificial Intelligence and Machine Learning)
+  </option>
+
+  <option value="Business Administration (MBA)">
+    Business Administration (MBA)
+  </option>
+
+  <option value="Academics">
+    Academics
+  </option>
+
+  <option value="College Level">
+    College Level
+  </option>
+
+  <option value="Incubation Centre">
+    Incubation Centre
+  </option>
+</select>
                   </div>
 
                   <div className="space-y-2">
