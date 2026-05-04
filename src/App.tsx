@@ -143,7 +143,7 @@ export default function App() {
     </div>
 
     {/* IIC Logo */}
-    <div className="w-[100px] h-[85px] flex items-center justify-center overflow-hidden shrink-0 bg-white border border-slate-100">
+    <div className="w-[125px] h-[85px] flex items-center justify-center overflow-hidden shrink-0 bg-white border border-slate-100">
       <img
         src={iicLogo}
         className="w-full h-full object-contain p-1"
